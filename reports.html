@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
+    
+</head>
+<body>
+
+   <!-- Header -->
+   <header>
+    <nav class="navbar">
+        <h1>Student Management System</h1>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Manage Students</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="reports.html">Reports</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Student Reports</h1>
+    
+    <table id="reports-table">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Roll No</th>
+                <th>Class & Section</th>
+                <th>Attendance (%)</th>
+                <th>Grade (%)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Report rows will be added dynamically -->
+        </tbody>
+    </table>
+
+    <button class="add-btn" onclick="addReport()">➕ Add Report</button>
+    <button class="export-btn" onclick="exportReportsPDF()">📄 Export Reports (PDF)</button>
+</div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

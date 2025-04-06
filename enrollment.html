@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- Navbar -->
+     <header>
+        <nav class="navbar">
+            <h1>Student Management System</h1>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Manage Students</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="reports.html">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Enroll New Student</h1>
+        <input type="text" id="studentName" placeholder="Enter Student Name">
+        <input type="number" id="rollNumber" placeholder="Enter Roll Number">
+        <input type="text" id="classSection" placeholder="Enter Class & Section">
+        <button onclick="enrollStudent()">Enroll Student</button>
+        <br><br>
+        <a href="students.html" class="back-link">⬅ Back to Manage Students</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

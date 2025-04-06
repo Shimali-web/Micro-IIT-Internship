@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- Header -->
+   <header>
+    <nav class="navbar">
+        <h1>Student Management System</h1>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Manage Students</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="reports.html">Reports</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Attendance Section -->
+<section class="attendance-section">
+    <h2>Attendance</h2>
+    <p><b>Manage and track student attendance efficiently.</b></p>
+
+    <!-- Attendance Form -->
+    <div class="attendance-form">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" placeholder="Enter student name">
+
+        <label for="attendance-status">Attendance Status:</label>
+        <select id="attendance-status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Late">Late</option>
+        </select>
+
+        <button onclick="markAttendance()">Mark Attendance</button>
+    </div>
+
+    <!-- Attendance Records -->
+    <div class="attendance-records">
+        <h3 style="color:aqua">Attendance Records</h3>
+        <table id="attendance-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Attendance records will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Export Attendance -->
+    <button class="export-btn" onclick="exportAttendance()">Export Report</button>
+</section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

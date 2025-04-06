@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+   <!-- Header -->
+   <header>
+    <nav class="navbar">
+        <h1>Student Management System</h1>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Manage Students</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="reports.html">Reports</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Grade Management System</h1>
+    <table id="grade-table">
+        <tr>
+            <th>Student Name</th>
+            <th>Roll No</th>
+            <th>Class & Section</th>
+            <th>Hindi</th>
+            <th>English</th>
+            <th>Math</th>
+            <th>Science</th>
+            <th>SST</th>
+            <th>Additional Subject</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="name" placeholder="Enter Name"></td>
+            <td><input type="number" id="roll" placeholder="Enter Roll No"></td>
+            <td><input type="text" id="class" placeholder="Class & Section"></td>
+            <td><input type="number" id="hindi" placeholder="Marks"></td>
+            <td><input type="number" id="english" placeholder="Marks"></td>
+            <td><input type="number" id="math" placeholder="Marks"></td>
+            <td><input type="number" id="science" placeholder="Marks"></td>
+            <td><input type="number" id="sst" placeholder="Marks"></td>
+            <td><input type="number" id="additional" placeholder="Marks"></td>
+            <td><span id="percentage">0%</span></td>
+        </tr>
+    </table>
+
+    <button class="calculate-btn" onclick="calculatePercentage()">Calculate Percentage</button>
+    <button class="export-btn" onclick="exportGrade()">Export Grade</button>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
